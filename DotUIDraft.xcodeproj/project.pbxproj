@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D249C2B1AACA35500AB6D63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C2A1AACA35500AB6D63 /* main.m */; };
+		5D249C2E1AACA35500AB6D63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C2D1AACA35500AB6D63 /* AppDelegate.m */; };
+		5D249C311AACA35500AB6D63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C301AACA35500AB6D63 /* ViewController.m */; };
+		5D249C341AACA35500AB6D63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D249C321AACA35500AB6D63 /* Main.storyboard */; };
+		5D249C361AACA35500AB6D63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D249C351AACA35500AB6D63 /* Images.xcassets */; };
+		5D249C391AACA35500AB6D63 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D249C371AACA35500AB6D63 /* LaunchScreen.xib */; };
+		5D249C451AACA35500AB6D63 /* DotUIDraftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C441AACA35500AB6D63 /* DotUIDraftTests.m */; };
+		5D249C511AAD369000AB6D63 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C501AAD369000AB6D63 /* SettingViewController.m */; };
+		5D249C561AAD37EC00AB6D63 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C551AAD37EC00AB6D63 /* AlarmViewController.m */; };
+		5D249C591AAD3AC500AB6D63 /* AddAlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C581AAD3AC500AB6D63 /* AddAlarmViewController.m */; };
+		5D249C5D1AAD6E1300AB6D63 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C5C1AAD6E1300AB6D63 /* AboutViewController.m */; };
+		5D249C611AAD6F6100AB6D63 /* VoiceRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C601AAD6F6100AB6D63 /* VoiceRecordingViewController.m */; };
+		5D249C651AAD738200AB6D63 /* BluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C641AAD738200AB6D63 /* BluetoothViewController.m */; };
+		5D249C691AADEC9900AB6D63 /* InstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C681AADEC9900AB6D63 /* InstructionViewController.m */; };
+		5D249C6D1AAE96F800AB6D63 /* AlarmTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C6B1AAE96F800AB6D63 /* AlarmTableViewCell.m */; };
+		5D249C6E1AAE96F800AB6D63 /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D249C6C1AAE96F800AB6D63 /* AlarmTableViewCell.xib */; };
+		5D249C711AAEB1A600AB6D63 /* AlarmEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C701AAEB1A600AB6D63 /* AlarmEditViewController.m */; };
+		5D249C751AAEC80400AB6D63 /* VoiceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C731AAEC80400AB6D63 /* VoiceTableViewCell.m */; };
+		5D249C761AAEC80400AB6D63 /* VoiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D249C741AAEC80400AB6D63 /* VoiceTableViewCell.xib */; };
+		5D249C7A1AAEDACB00AB6D63 /* AboutTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D249C781AAEDACB00AB6D63 /* AboutTableViewCell.m */; };
+		5D249C7B1AAEDACB00AB6D63 /* AboutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D249C791AAEDACB00AB6D63 /* AboutTableViewCell.xib */; };
+		5D6805A61ABFB145002C4C4E /* DotBLEManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6805A51ABFB145002C4C4E /* DotBLEManager.m */; };
+		5D6805A91AC14005002C4C4E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6805A81AC14005002C4C4E /* libsqlite3.dylib */; };
+		5D6805AC1AC1402C002C4C4E /* DotDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6805AB1AC1402C002C4C4E /* DotDBManager.m */; };
+		5D6805AF1AC15DDA002C4C4E /* SampleVoiceRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6805AE1AC15DDA002C4C4E /* SampleVoiceRecordingViewController.m */; };
+		5D68060A1AC24C1E002C4C4E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6806091AC24C1E002C4C4E /* AudioToolbox.framework */; };
+		5D68060C1AC24C33002C4C4E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D68060B1AC24C33002C4C4E /* AVFoundation.framework */; };
+		5D6806121AC24CCE002C4C4E /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D68060E1AC24CCE002C4C4E /* AcousticModelEnglish.bundle */; };
+		5D6806131AC24CCE002C4C4E /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D68060F1AC24CCE002C4C4E /* AcousticModelSpanish.bundle */; };
+		5D6806141AC24CCE002C4C4E /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6806101AC24CCE002C4C4E /* OpenEars.framework */; };
+		5D6806151AC24CCF002C4C4E /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D6806111AC24CCE002C4C4E /* Slt.framework */; };
+		5D6806341AC26C17002C4C4E /* VoiceRecordItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6806331AC26C17002C4C4E /* VoiceRecordItem.m */; };
+		5D6806381AC3C0F5002C4C4E /* alarmlist.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5D6806371AC3C0F5002C4C4E /* alarmlist.txt */; };
+		5D68063B1AC3C37F002C4C4E /* AlarmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D68063A1AC3C37F002C4C4E /* AlarmManager.m */; };
+		5D6806401AC404C8002C4C4E /* MainMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D68063E1AC404C8002C4C4E /* MainMenuCell.m */; };
+		5D6806411AC404C8002C4C4E /* MainMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D68063F1AC404C8002C4C4E /* MainMenuCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D249C3F1AACA35500AB6D63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D249C1D1AACA35500AB6D63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D249C241AACA35500AB6D63;
+			remoteInfo = DotUIDraft;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D249C251AACA35500AB6D63 /* DotUIDraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotUIDraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D249C291AACA35500AB6D63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D249C2A1AACA35500AB6D63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5D249C2C1AACA35500AB6D63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5D249C2D1AACA35500AB6D63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5D249C2F1AACA35500AB6D63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5D249C301AACA35500AB6D63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5D249C331AACA35500AB6D63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D249C351AACA35500AB6D63 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5D249C381AACA35500AB6D63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5D249C3E1AACA35500AB6D63 /* DotUIDraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DotUIDraftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D249C431AACA35500AB6D63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D249C441AACA35500AB6D63 /* DotUIDraftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DotUIDraftTests.m; sourceTree = "<group>"; };
+		5D249C4F1AAD369000AB6D63 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		5D249C501AAD369000AB6D63 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		5D249C541AAD37EC00AB6D63 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		5D249C551AAD37EC00AB6D63 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		5D249C571AAD3AC500AB6D63 /* AddAlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddAlarmViewController.h; sourceTree = "<group>"; };
+		5D249C581AAD3AC500AB6D63 /* AddAlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddAlarmViewController.m; sourceTree = "<group>"; };
+		5D249C5B1AAD6E1300AB6D63 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		5D249C5C1AAD6E1300AB6D63 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		5D249C5F1AAD6F6100AB6D63 /* VoiceRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceRecordingViewController.h; sourceTree = "<group>"; };
+		5D249C601AAD6F6100AB6D63 /* VoiceRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceRecordingViewController.m; sourceTree = "<group>"; };
+		5D249C631AAD738200AB6D63 /* BluetoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothViewController.h; sourceTree = "<group>"; };
+		5D249C641AAD738200AB6D63 /* BluetoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothViewController.m; sourceTree = "<group>"; };
+		5D249C671AADEC9900AB6D63 /* InstructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstructionViewController.h; sourceTree = "<group>"; };
+		5D249C681AADEC9900AB6D63 /* InstructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstructionViewController.m; sourceTree = "<group>"; };
+		5D249C6A1AAE96F800AB6D63 /* AlarmTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmTableViewCell.h; sourceTree = "<group>"; };
+		5D249C6B1AAE96F800AB6D63 /* AlarmTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmTableViewCell.m; sourceTree = "<group>"; };
+		5D249C6C1AAE96F800AB6D63 /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
+		5D249C6F1AAEB1A600AB6D63 /* AlarmEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmEditViewController.h; sourceTree = "<group>"; };
+		5D249C701AAEB1A600AB6D63 /* AlarmEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmEditViewController.m; sourceTree = "<group>"; };
+		5D249C721AAEC80400AB6D63 /* VoiceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceTableViewCell.h; sourceTree = "<group>"; };
+		5D249C731AAEC80400AB6D63 /* VoiceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceTableViewCell.m; sourceTree = "<group>"; };
+		5D249C741AAEC80400AB6D63 /* VoiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoiceTableViewCell.xib; sourceTree = "<group>"; };
+		5D249C771AAEDACB00AB6D63 /* AboutTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutTableViewCell.h; sourceTree = "<group>"; };
+		5D249C781AAEDACB00AB6D63 /* AboutTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutTableViewCell.m; sourceTree = "<group>"; };
+		5D249C791AAEDACB00AB6D63 /* AboutTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutTableViewCell.xib; sourceTree = "<group>"; };
+		5D6805A41ABFB145002C4C4E /* DotBLEManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotBLEManager.h; sourceTree = "<group>"; };
+		5D6805A51ABFB145002C4C4E /* DotBLEManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotBLEManager.m; sourceTree = "<group>"; };
+		5D6805A81AC14005002C4C4E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		5D6805AA1AC1402C002C4C4E /* DotDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotDBManager.h; sourceTree = "<group>"; };
+		5D6805AB1AC1402C002C4C4E /* DotDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotDBManager.m; sourceTree = "<group>"; };
+		5D6805AD1AC15DDA002C4C4E /* SampleVoiceRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleVoiceRecordingViewController.h; sourceTree = "<group>"; };
+		5D6805AE1AC15DDA002C4C4E /* SampleVoiceRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleVoiceRecordingViewController.m; sourceTree = "<group>"; };
+		5D6806091AC24C1E002C4C4E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5D68060B1AC24C33002C4C4E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5D68060E1AC24CCE002C4C4E /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		5D68060F1AC24CCE002C4C4E /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		5D6806101AC24CCE002C4C4E /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		5D6806111AC24CCE002C4C4E /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		5D6806321AC26C17002C4C4E /* VoiceRecordItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceRecordItem.h; sourceTree = "<group>"; };
+		5D6806331AC26C17002C4C4E /* VoiceRecordItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceRecordItem.m; sourceTree = "<group>"; };
+		5D6806371AC3C0F5002C4C4E /* alarmlist.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = alarmlist.txt; sourceTree = "<group>"; };
+		5D6806391AC3C37F002C4C4E /* AlarmManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmManager.h; sourceTree = "<group>"; };
+		5D68063A1AC3C37F002C4C4E /* AlarmManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmManager.m; sourceTree = "<group>"; };
+		5D68063D1AC404C8002C4C4E /* MainMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuCell.h; sourceTree = "<group>"; };
+		5D68063E1AC404C8002C4C4E /* MainMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuCell.m; sourceTree = "<group>"; };
+		5D68063F1AC404C8002C4C4E /* MainMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenuCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D249C221AACA35500AB6D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6806151AC24CCF002C4C4E /* Slt.framework in Frameworks */,
+				5D68060C1AC24C33002C4C4E /* AVFoundation.framework in Frameworks */,
+				5D68060A1AC24C1E002C4C4E /* AudioToolbox.framework in Frameworks */,
+				5D6805A91AC14005002C4C4E /* libsqlite3.dylib in Frameworks */,
+				5D6806141AC24CCE002C4C4E /* OpenEars.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D249C3B1AACA35500AB6D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D249C1C1AACA35500AB6D63 = {
+			isa = PBXGroup;
+			children = (
+				5D68060D1AC24CCE002C4C4E /* Framework */,
+				5D68060B1AC24C33002C4C4E /* AVFoundation.framework */,
+				5D6806091AC24C1E002C4C4E /* AudioToolbox.framework */,
+				5D6805A81AC14005002C4C4E /* libsqlite3.dylib */,
+				5D249C271AACA35500AB6D63 /* DotUIDraft */,
+				5D249C411AACA35500AB6D63 /* DotUIDraftTests */,
+				5D249C261AACA35500AB6D63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D249C261AACA35500AB6D63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D249C251AACA35500AB6D63 /* DotUIDraft.app */,
+				5D249C3E1AACA35500AB6D63 /* DotUIDraftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D249C271AACA35500AB6D63 /* DotUIDraft */ = {
+			isa = PBXGroup;
+			children = (
+				5D68063C1AC40494002C4C4E /* Main Menu */,
+				5D6805A71AC13FC1002C4C4E /* Database */,
+				5D249C661AADEC7000AB6D63 /* Instructions */,
+				5D249C621AAD736500AB6D63 /* Bluetooth */,
+				5D249C5E1AAD6F3800AB6D63 /* Voice Recording */,
+				5D249C5A1AAD6DFA00AB6D63 /* About */,
+				5D249C521AAD37C500AB6D63 /* Alarm */,
+				5D249C4E1AAD367B00AB6D63 /* Setting */,
+				5D249C2C1AACA35500AB6D63 /* AppDelegate.h */,
+				5D249C2D1AACA35500AB6D63 /* AppDelegate.m */,
+				5D249C321AACA35500AB6D63 /* Main.storyboard */,
+				5D249C351AACA35500AB6D63 /* Images.xcassets */,
+				5D249C371AACA35500AB6D63 /* LaunchScreen.xib */,
+				5D249C281AACA35500AB6D63 /* Supporting Files */,
+			);
+			path = DotUIDraft;
+			sourceTree = "<group>";
+		};
+		5D249C281AACA35500AB6D63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D249C291AACA35500AB6D63 /* Info.plist */,
+				5D249C2A1AACA35500AB6D63 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D249C411AACA35500AB6D63 /* DotUIDraftTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D249C441AACA35500AB6D63 /* DotUIDraftTests.m */,
+				5D249C421AACA35500AB6D63 /* Supporting Files */,
+			);
+			path = DotUIDraftTests;
+			sourceTree = "<group>";
+		};
+		5D249C421AACA35500AB6D63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D249C431AACA35500AB6D63 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D249C4E1AAD367B00AB6D63 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				5D249C4F1AAD369000AB6D63 /* SettingViewController.h */,
+				5D249C501AAD369000AB6D63 /* SettingViewController.m */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		5D249C521AAD37C500AB6D63 /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				5D6806371AC3C0F5002C4C4E /* alarmlist.txt */,
+				5D249C541AAD37EC00AB6D63 /* AlarmViewController.h */,
+				5D249C551AAD37EC00AB6D63 /* AlarmViewController.m */,
+				5D249C571AAD3AC500AB6D63 /* AddAlarmViewController.h */,
+				5D249C581AAD3AC500AB6D63 /* AddAlarmViewController.m */,
+				5D249C6A1AAE96F800AB6D63 /* AlarmTableViewCell.h */,
+				5D249C6B1AAE96F800AB6D63 /* AlarmTableViewCell.m */,
+				5D249C6C1AAE96F800AB6D63 /* AlarmTableViewCell.xib */,
+				5D249C6F1AAEB1A600AB6D63 /* AlarmEditViewController.h */,
+				5D249C701AAEB1A600AB6D63 /* AlarmEditViewController.m */,
+				5D6806391AC3C37F002C4C4E /* AlarmManager.h */,
+				5D68063A1AC3C37F002C4C4E /* AlarmManager.m */,
+			);
+			name = Alarm;
+			sourceTree = "<group>";
+		};
+		5D249C5A1AAD6DFA00AB6D63 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				5D249C5B1AAD6E1300AB6D63 /* AboutViewController.h */,
+				5D249C5C1AAD6E1300AB6D63 /* AboutViewController.m */,
+				5D249C771AAEDACB00AB6D63 /* AboutTableViewCell.h */,
+				5D249C781AAEDACB00AB6D63 /* AboutTableViewCell.m */,
+				5D249C791AAEDACB00AB6D63 /* AboutTableViewCell.xib */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		5D249C5E1AAD6F3800AB6D63 /* Voice Recording */ = {
+			isa = PBXGroup;
+			children = (
+				5D6806361AC2A2F6002C4C4E /* VoiceRecordingPlayer */,
+				5D6806351AC2A2DF002C4C4E /* SampleVoiceRecording */,
+				5D249C5F1AAD6F6100AB6D63 /* VoiceRecordingViewController.h */,
+				5D249C601AAD6F6100AB6D63 /* VoiceRecordingViewController.m */,
+				5D249C721AAEC80400AB6D63 /* VoiceTableViewCell.h */,
+				5D249C731AAEC80400AB6D63 /* VoiceTableViewCell.m */,
+				5D249C741AAEC80400AB6D63 /* VoiceTableViewCell.xib */,
+				5D6806321AC26C17002C4C4E /* VoiceRecordItem.h */,
+				5D6806331AC26C17002C4C4E /* VoiceRecordItem.m */,
+			);
+			name = "Voice Recording";
+			sourceTree = "<group>";
+		};
+		5D249C621AAD736500AB6D63 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				5D249C631AAD738200AB6D63 /* BluetoothViewController.h */,
+				5D249C641AAD738200AB6D63 /* BluetoothViewController.m */,
+				5D6805A41ABFB145002C4C4E /* DotBLEManager.h */,
+				5D6805A51ABFB145002C4C4E /* DotBLEManager.m */,
+			);
+			name = Bluetooth;
+			sourceTree = "<group>";
+		};
+		5D249C661AADEC7000AB6D63 /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				5D249C671AADEC9900AB6D63 /* InstructionViewController.h */,
+				5D249C681AADEC9900AB6D63 /* InstructionViewController.m */,
+			);
+			name = Instructions;
+			sourceTree = "<group>";
+		};
+		5D6805A71AC13FC1002C4C4E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				5D6805AA1AC1402C002C4C4E /* DotDBManager.h */,
+				5D6805AB1AC1402C002C4C4E /* DotDBManager.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		5D68060D1AC24CCE002C4C4E /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5D68060E1AC24CCE002C4C4E /* AcousticModelEnglish.bundle */,
+				5D68060F1AC24CCE002C4C4E /* AcousticModelSpanish.bundle */,
+				5D6806101AC24CCE002C4C4E /* OpenEars.framework */,
+				5D6806111AC24CCE002C4C4E /* Slt.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		5D6806351AC2A2DF002C4C4E /* SampleVoiceRecording */ = {
+			isa = PBXGroup;
+			children = (
+				5D6805AD1AC15DDA002C4C4E /* SampleVoiceRecordingViewController.h */,
+				5D6805AE1AC15DDA002C4C4E /* SampleVoiceRecordingViewController.m */,
+			);
+			name = SampleVoiceRecording;
+			sourceTree = "<group>";
+		};
+		5D6806361AC2A2F6002C4C4E /* VoiceRecordingPlayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VoiceRecordingPlayer;
+			sourceTree = "<group>";
+		};
+		5D68063C1AC40494002C4C4E /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5D249C2F1AACA35500AB6D63 /* ViewController.h */,
+				5D249C301AACA35500AB6D63 /* ViewController.m */,
+				5D68063D1AC404C8002C4C4E /* MainMenuCell.h */,
+				5D68063E1AC404C8002C4C4E /* MainMenuCell.m */,
+				5D68063F1AC404C8002C4C4E /* MainMenuCell.xib */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D249C241AACA35500AB6D63 /* DotUIDraft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D249C481AACA35500AB6D63 /* Build configuration list for PBXNativeTarget "DotUIDraft" */;
+			buildPhases = (
+				5D249C211AACA35500AB6D63 /* Sources */,
+				5D249C221AACA35500AB6D63 /* Frameworks */,
+				5D249C231AACA35500AB6D63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DotUIDraft;
+			productName = DotUIDraft;
+			productReference = 5D249C251AACA35500AB6D63 /* DotUIDraft.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D249C3D1AACA35500AB6D63 /* DotUIDraftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D249C4B1AACA35500AB6D63 /* Build configuration list for PBXNativeTarget "DotUIDraftTests" */;
+			buildPhases = (
+				5D249C3A1AACA35500AB6D63 /* Sources */,
+				5D249C3B1AACA35500AB6D63 /* Frameworks */,
+				5D249C3C1AACA35500AB6D63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D249C401AACA35500AB6D63 /* PBXTargetDependency */,
+			);
+			name = DotUIDraftTests;
+			productName = DotUIDraftTests;
+			productReference = 5D249C3E1AACA35500AB6D63 /* DotUIDraftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D249C1D1AACA35500AB6D63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Braison;
+				TargetAttributes = {
+					5D249C241AACA35500AB6D63 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = DLS9TB22WX;
+					};
+					5D249C3D1AACA35500AB6D63 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5D249C241AACA35500AB6D63;
+					};
+				};
+			};
+			buildConfigurationList = 5D249C201AACA35500AB6D63 /* Build configuration list for PBXProject "DotUIDraft" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D249C1C1AACA35500AB6D63;
+			productRefGroup = 5D249C261AACA35500AB6D63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D249C241AACA35500AB6D63 /* DotUIDraft */,
+				5D249C3D1AACA35500AB6D63 /* DotUIDraftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D249C231AACA35500AB6D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D249C761AAEC80400AB6D63 /* VoiceTableViewCell.xib in Resources */,
+				5D249C341AACA35500AB6D63 /* Main.storyboard in Resources */,
+				5D249C391AACA35500AB6D63 /* LaunchScreen.xib in Resources */,
+				5D6806381AC3C0F5002C4C4E /* alarmlist.txt in Resources */,
+				5D249C7B1AAEDACB00AB6D63 /* AboutTableViewCell.xib in Resources */,
+				5D6806411AC404C8002C4C4E /* MainMenuCell.xib in Resources */,
+				5D249C361AACA35500AB6D63 /* Images.xcassets in Resources */,
+				5D6806131AC24CCE002C4C4E /* AcousticModelSpanish.bundle in Resources */,
+				5D249C6E1AAE96F800AB6D63 /* AlarmTableViewCell.xib in Resources */,
+				5D6806121AC24CCE002C4C4E /* AcousticModelEnglish.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D249C3C1AACA35500AB6D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D249C211AACA35500AB6D63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D249C591AAD3AC500AB6D63 /* AddAlarmViewController.m in Sources */,
+				5D6805AC1AC1402C002C4C4E /* DotDBManager.m in Sources */,
+				5D249C751AAEC80400AB6D63 /* VoiceTableViewCell.m in Sources */,
+				5D249C651AAD738200AB6D63 /* BluetoothViewController.m in Sources */,
+				5D6806341AC26C17002C4C4E /* VoiceRecordItem.m in Sources */,
+				5D249C711AAEB1A600AB6D63 /* AlarmEditViewController.m in Sources */,
+				5D249C311AACA35500AB6D63 /* ViewController.m in Sources */,
+				5D6805AF1AC15DDA002C4C4E /* SampleVoiceRecordingViewController.m in Sources */,
+				5D249C561AAD37EC00AB6D63 /* AlarmViewController.m in Sources */,
+				5D249C611AAD6F6100AB6D63 /* VoiceRecordingViewController.m in Sources */,
+				5D249C5D1AAD6E1300AB6D63 /* AboutViewController.m in Sources */,
+				5D6805A61ABFB145002C4C4E /* DotBLEManager.m in Sources */,
+				5D249C2E1AACA35500AB6D63 /* AppDelegate.m in Sources */,
+				5D249C7A1AAEDACB00AB6D63 /* AboutTableViewCell.m in Sources */,
+				5D249C6D1AAE96F800AB6D63 /* AlarmTableViewCell.m in Sources */,
+				5D6806401AC404C8002C4C4E /* MainMenuCell.m in Sources */,
+				5D249C2B1AACA35500AB6D63 /* main.m in Sources */,
+				5D249C511AAD369000AB6D63 /* SettingViewController.m in Sources */,
+				5D68063B1AC3C37F002C4C4E /* AlarmManager.m in Sources */,
+				5D249C691AADEC9900AB6D63 /* InstructionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D249C3A1AACA35500AB6D63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D249C451AACA35500AB6D63 /* DotUIDraftTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D249C401AACA35500AB6D63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D249C241AACA35500AB6D63 /* DotUIDraft */;
+			targetProxy = 5D249C3F1AACA35500AB6D63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D249C321AACA35500AB6D63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D249C331AACA35500AB6D63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D249C371AACA35500AB6D63 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D249C381AACA35500AB6D63 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D249C461AACA35500AB6D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5D249C471AACA35500AB6D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D249C491AACA35500AB6D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
+				INFOPLIST_FILE = DotUIDraft/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5D249C4A1AACA35500AB6D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
+				INFOPLIST_FILE = DotUIDraft/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5D249C4C1AACA35500AB6D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DotUIDraftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotUIDraft.app/DotUIDraft";
+			};
+			name = Debug;
+		};
+		5D249C4D1AACA35500AB6D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DotUIDraftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotUIDraft.app/DotUIDraft";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D249C201AACA35500AB6D63 /* Build configuration list for PBXProject "DotUIDraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D249C461AACA35500AB6D63 /* Debug */,
+				5D249C471AACA35500AB6D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D249C481AACA35500AB6D63 /* Build configuration list for PBXNativeTarget "DotUIDraft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D249C491AACA35500AB6D63 /* Debug */,
+				5D249C4A1AACA35500AB6D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D249C4B1AACA35500AB6D63 /* Build configuration list for PBXNativeTarget "DotUIDraftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D249C4C1AACA35500AB6D63 /* Debug */,
+				5D249C4D1AACA35500AB6D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D249C1D1AACA35500AB6D63 /* Project object */;
+}

@@ -1,0 +1,3 @@
+12:00 pm|Lunch time|1
+11:00 am|Meeting with board|1
+11:59 pm|Ready for bed|0
